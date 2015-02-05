@@ -1,3 +1,4 @@
+package part_1;
 /**
  * @author David Lee
  * UNI: jl4397
@@ -29,7 +30,7 @@ public class MakeChange {
 	 * @param centValue the current number of cents
 	 * @param lastValue the last denomination (nickel, dime, or quarter) added to the string
 	 * @param stringValue the string keeping track of the ways to make change
-	 * @return the distinct ways to make change using dimes, nickels, and quarters
+	 * @return the String of distinct ways to make change using dimes, nickels, and quarters
 	 */
 	public static String change(int centValue, int lastValue, String stringValue){
 		if(centValue==0){

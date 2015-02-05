@@ -1,4 +1,4 @@
-package TimerApplet;
+package part_2;
 
 import graph.Axis; 
 import graph.DataSet;

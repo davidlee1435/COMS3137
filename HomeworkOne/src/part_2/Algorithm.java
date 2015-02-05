@@ -1,4 +1,4 @@
-package TimerApplet;
+package part_2;
 import java.util.Random;
 
 /**
@@ -18,9 +18,7 @@ public class Algorithm
 	
 	/**
 	 * Generating random numbers by checking every new random number with all the other numbers already in the array<br>
-	 * 
 	 * @param upperLimit the upperLimit from which to choose random integers
-	 * @return the array of random integers
 	 */
 	public void algorithmOne(int upperLimit)
 	{
@@ -42,9 +40,7 @@ public class Algorithm
 	
 	/**
 	 * Generating random numbers by checking an array of booleans called used that indicate whether the number has already been put in the array.<br>
-	 * 
 	 * @param upperLimit the upperLimit from which to choose random integers
-	 * @return the array of random integers
 	 */
 	public void algorithmTwo(int upperLimit)
 	{
@@ -69,9 +65,8 @@ public class Algorithm
 	/**
 	 * Generating random numbers by checking. <br>
 	 * @param upperLimit the upperLimit from which to choose random integers
-	 * @return the array of random integers
 	 */
-	public int[] algorithmThree(int upperLimit)
+	public void algorithmThree(int upperLimit)
 	{
 		int[] randomArray = new int[upperLimit];
 		for(int i=0; i<upperLimit; i++){
@@ -80,7 +75,6 @@ public class Algorithm
 		for(int i=0; i<randomArray.length; i++){
 			swapReferences(randomArray, i, randGenerator.nextInt(upperLimit));
 		}
-		return randomArray;
 	}
 	
 	/**

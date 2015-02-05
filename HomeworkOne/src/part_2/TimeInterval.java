@@ -1,4 +1,4 @@
-package TimerApplet;
+package part_2;
 
 /**
  * A timing utility class useful for timing code segments
