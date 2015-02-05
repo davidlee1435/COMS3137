@@ -1,10 +1,11 @@
 package part_1;
 /**
- * @author David Lee
- * UNI: jl4397
- * 
  * Determines distinct ways to split a value given in cents by
- * quarters, dimes and nickels recursively.
+ * quarters, dimes and nickels recursively.<br>
+ * 
+ * @author David Lee<br>
+ * UNI: jl4397<br>
+ * 
  */
 public class MakeChange {
 	

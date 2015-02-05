@@ -2,9 +2,9 @@ package part_2;
 import java.util.Random;
 
 /**
+ * Class for the algorithms listed in the Weisz text to generate a random permutation of the first N integers.<br>
  * @author David Lee<br>
  * UNI: jl4397<br>
- * Class for the algorithms listed in the Weisz text to generate a random permutation of the first N integers.<br>
  */
 public class Algorithm 
 {
@@ -63,7 +63,7 @@ public class Algorithm
 	}
 	
 	/**
-	 * Generating random numbers by checking. <br>
+	 * Generating random numbers by swapping references between the generated number and a random number. <br>
 	 * @param upperLimit the upperLimit from which to choose random integers
 	 */
 	public void algorithmThree(int upperLimit)

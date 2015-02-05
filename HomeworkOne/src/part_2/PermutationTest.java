@@ -11,10 +11,9 @@ import java.util.Arrays;
 import graph.*;
 
 /**
+ * An applet that times three different permutation algorithms<br>
  * @author David Lee<br>
  * UNI: jl4397 <br>
- * 
- * An applet that times three different permutation algorithms<br>
  * Source Code: http://www.cs.columbia.edu/~allen/S14/src/graphexample/<br>
  */
 public class PermutationTest extends Applet{

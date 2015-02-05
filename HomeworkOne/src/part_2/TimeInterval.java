@@ -1,7 +1,8 @@
 package part_2;
 
 /**
- * A timing utility class useful for timing code segments
+ * A timing utility class useful for timing code segments <br>
+ * @author David Lee<br>
  * Source directory: http://www.cs.columbia.edu/~allen/S14/src/graphexample/
 */
 public class TimeInterval {
