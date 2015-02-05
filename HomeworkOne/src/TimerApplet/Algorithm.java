@@ -2,14 +2,14 @@ package TimerApplet;
 import java.util.Random;
 
 /**
- * @author David Lee
- * UNI: jl4397
- * Class for the algorithms listed in the Weisz text to generate a random permutation of the first N integers.
+ * @author David Lee<br>
+ * UNI: jl4397<br>
+ * Class for the algorithms listed in the Weisz text to generate a random permutation of the first N integers.<br>
  */
 public class Algorithm 
 {
 	/**
-	 * Constructor that creates a random number generator using Java's Random class
+	 * Instantiates the Algorithm class with a random number generator<br>
 	 */
 	public Algorithm()
 	{
@@ -17,12 +17,12 @@ public class Algorithm
 	}
 	
 	/**
-	 * Generating random numbers by checking every new random number with all the other numbers already in the array
+	 * Generating random numbers by checking every new random number with all the other numbers already in the array<br>
 	 * 
 	 * @param upperLimit the upperLimit from which to choose random integers
 	 * @return the array of random integers
 	 */
-	public int[] algorithmOne(int upperLimit)
+	public void algorithmOne(int upperLimit)
 	{
 		int[] randomArray = new int[upperLimit];
 		for(int i=0; i<randomArray.length; i++){
@@ -38,16 +38,15 @@ public class Algorithm
 			}
 			randomArray[i]=randomInt;
 		}
-		return randomArray;
 	}
 	
 	/**
-	 * Generating random numbers by checking an array of booleans called used that indicate whether the number has already been put in the array
+	 * Generating random numbers by checking an array of booleans called used that indicate whether the number has already been put in the array.<br>
 	 * 
 	 * @param upperLimit the upperLimit from which to choose random integers
 	 * @return the array of random integers
 	 */
-	public int[] algorithmTwo(int upperLimit)
+	public void algorithmTwo(int upperLimit)
 	{
 		int[] randomArray = new int[upperLimit];
 		boolean[] used = new boolean[upperLimit];
@@ -65,10 +64,10 @@ public class Algorithm
 			randomArray[i] = randomInt;
 			used[randomInt-1] = true;
 		}
-		return randomArray;
 	}
+	
 	/**
-	 * Generating random numbers by checking 
+	 * Generating random numbers by checking. <br>
 	 * @param upperLimit the upperLimit from which to choose random integers
 	 * @return the array of random integers
 	 */
@@ -80,13 +79,12 @@ public class Algorithm
 		}
 		for(int i=0; i<randomArray.length; i++){
 			swapReferences(randomArray, i, randGenerator.nextInt(upperLimit));
-			System.out.println(randomArray[i]);
 		}
 		return randomArray;
 	}
 	
 	/**
-	 * Swaps the references in a particular integer array
+	 * Swaps the references in a particular integer array <br>
 	 * @param arr an array of integers
 	 * @param pos1 an integer in the array to switch
 	 * @param pos2 an integer in the array to switch

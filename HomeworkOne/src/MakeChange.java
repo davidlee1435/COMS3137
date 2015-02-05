@@ -2,10 +2,10 @@
  * @author David Lee
  * UNI: jl4397
  * 
- * A class to determine distinct ways to split a value given in cents by
+ * Determines distinct ways to split a value given in cents by
  * quarters, dimes and nickels recursively.
  */
-public class CoinSplitter {
+public class MakeChange {
 	
 	/**
 	 * Main method
@@ -14,7 +14,9 @@ public class CoinSplitter {
 	public static void main(String[] args){
 		int originalValue = Integer.parseInt(args[0]);
 		String originalString = "Change for " + originalValue + " =";
-		if(originalValue%5!=0){
+		
+		//Checks for valid cent value
+		if(originalValue%5!=0 || originalValue<=0){
 			System.out.println(originalValue + " can't be changed");
 		}
 		else{
@@ -46,6 +48,7 @@ public class CoinSplitter {
 			return change(centValue-NICKEL, NICKEL, stringValue+SPACE+NICKEL);
 		}
 	}
+	
 	private static final int QUARTER = 25;
 	private static final int DIME = 10;
 	private static final int NICKEL = 5;
